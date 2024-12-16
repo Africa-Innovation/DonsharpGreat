@@ -272,7 +272,7 @@ header .nav li:last-child {
 
 
 /*couleur et taille pour tous les paragraphes, petit texte*/
-.card p, .bio-content p, .card-text p{
+.card p, .bio-content p, .card-text p, .details p{
     color: #555;
     font-size: 1.1rem;
 }
@@ -489,10 +489,10 @@ footer {
     /* Ombre pour rendre le texte lisible */
 }
 
-.h1 {
-    font-size: 2rem;
+/* .h1 {
+    font-size: 20rem;
     font-weight: bold;
-}
+} */
 
 /* a propos cest le tabbar */
 
@@ -555,7 +555,7 @@ footer {
 
 /* couleur pour titre comme,partenaire,disco,bio */
 
-.tab-content h3, .partenaires h3, .container h3, .container-slid h3 {
+.tab-content h3, .partenaires h3, .container h3, .container-slid h3, .details h4 {
     color: #5e8ea7;
 }
 
@@ -911,6 +911,7 @@ footer {
 }
 
  /* page des actualite */
+
  .carousel-item img {
     height: 500px;
     object-fit: cover;
@@ -930,3 +931,46 @@ footer {
 .containeActu{
     padding-top: 50px;
 }
+
+/* prix distinction dans page propos */
+
+.containertest {
+    width: 90%;
+    max-width: 1200px;
+    margin: 2rem auto;
+}
+.distinction {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: white;
+    margin: 1rem 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+.distinction img {
+    width: 100%;
+    max-width: 300px;
+    height: 400px;
+    object-fit: cover;
+}
+.details {
+    flex: 1;
+    padding: 1rem;
+    margin-top: 80px;
+}
+ 
+  /* Media Queries for Responsiveness */
+  @media (max-width: 768px) {
+    .distinction {
+        flex-direction: column;
+        align-items: center;
+    }
+    .distinction img {
+        max-width: 100%;
+    }
+    .details {
+        text-align: center;
+    }
+}
+ 
