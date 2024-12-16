@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actualités - Journal</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <!-- En-tête -->
+    <header class="head">
+        <h2><a href="index.html">Donsharp de Batoro</a></h2>
+        <ul class="nav">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="#propos">A Propos</a></li>
+            <li><a href="projet.html">Projets</a></li>
+            <li><a href="partenaires.html">Partenaires</a></li>
+            <li><a href="#">Vidéo</a></li>
+
+            <li><a href="#footer">Contact</a></li>
+        </ul>
+        <div class="hamburger">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </header>
+
+    <!-- Carousel : Articles Principaux -->
+    <section class="containeActu mt-4">
+        <div id="carouselActualites" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <!-- Slide 1 -->
+                <div class="carousel-item active">
+                    <img src="img/actualites/WhatsApp Image 2024-12-05 at 11.22.38 (1).jpeg" class="d-block w-100" alt="Article Principal 1">
+                    <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-3">
+                        <h5>Grand Titre de l'Actualité 1 </h5>
+                        <p>Résumé de l'article principal 1. Cliquez pour lire plus.</p>
+                    </div>
+                </div>
+                <!-- Slide 2 -->
+                <div class="carousel-item">
+                    <img src="img/actualites/WhatsApp Image 2024-12-05 at 11.22.38.jpeg" class="d-block w-100" alt="Article Principal 2">
+                    <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-3">
+                        <h5>Grand Titre de l'Actualité 2</h5>
+                        <p>Résumé rapide de l'article principal 2. Cliquez pour lire plus.</p>
+                    </div>
+                </div>
+                <!-- Slide 3 -->
+                <div class="carousel-item">
+                    <img src="https://via.placeholder.com/1200x500" class="d-block w-100" alt="Article Principal 3">
+                    <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-3">
+                        <h5>Grand Titre de l'Actualité 3</h5>
+                        <p>Résumé rapide de l'article principal 3. Cliquez pour lire plus.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Contrôles du carousel -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselActualites" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Précédent</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselActualites" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Suivant</span>
+            </button>
+        </div>
+    </section>
+
+    <!-- Articles Secondaires -->
+    <section class="container mt-5">
+        <h3 class="mb-4">Derniers Articles</h3>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <!-- Article 1 -->
+            <div class="col">
+                <div class="card h-100 shadow-sm">
+                    <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Article 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Titre de l'Article 1</h5>
+                        <p class="card-text">Résumé rapide de l'article 1.</p>
+                    </div>
+                    <div class="card-footer text-end">
+                        <a href="#" class="btn btn-sm btn-outline-primary">Lire plus</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Article 2 -->
+            <div class="col">
+                <div class="card actualitecard h-100 shadow-sm">
+                    <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Article 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Titre de l'Article 2</h5>
+                        <p class="card-text">Résumé rapide de l'article 2.</p>
+                    </div>
+                    <div class="card-footer text-end">
+                        <a href="#" class="btn btn-sm btn-outline-primary">Lire plus</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Article 3 -->
+            <div class="col">
+                <div class="card actualitecard h-100 shadow-sm">
+                    <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Article 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Titre de l'Article 3</h5>
+                        <p class="card-text">Résumé rapide de l'article 3.</p>
+                    </div>
+                    <div class="card-footer text-end">
+                        <a href="#" class="btn btn-sm btn-outline-primary">Lire plus</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pied de page -->
+    <section id="footer">
+        <footer>
+            <div class="footerContainer">
+                <div class="socialIcons">
+                    <a href="https://www.facebook.com/donsharpdebatoroleparolier?mibextid=LQQJ4d"><i
+                            class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.tiktok.com/@donsharpdebatoroparolier?_t=8majI8KCgEQ&_r=1"><i
+                            class="fa-brands fa-tiktok"></i></a>
+                    <a href="https://open.spotify.com/intl-fr/artist/6dstbJ5WuOnTfAZZm4bdJw"><i
+                            class="fa-brands fa-spotify"></i></a>
+
+                </div>
+                <div class="footerNav">
+                    <ul>
+                        <li><a href="#propos">Biographie</a></li>
+                        <li><a href="#disco">Discographie</a></li>
+                        <li><a href="#video">Vidéo</a></li>
+                        <li><a>Contact</a></li>
+
+                    </ul>
+                </div>
+
+            </div>
+            <div class="footerBottom">
+                <p>Copyright &copy;2024 ; Designed by <span class="designer">######</span></p>
+            </div>
+        </footer>
+    </section>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
