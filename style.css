@@ -221,12 +221,21 @@ header .nav li:last-child {
 
 /* section a propos */
 
+
+
+/*couleur et taille pour tous les paragraphes, petit texte*/
+.card p, .bio-content p, .card-text p, .details p{
+    color: #555;
+    font-size: 1.1rem;
+}
+
+
 .main {
     padding-top: 55px;
     padding: 5% 8%;
 }
 
-
+/* page accueil*/
 
 .cards {
     display: flex;
@@ -271,11 +280,6 @@ header .nav li:last-child {
 }
 
 
-/*couleur et taille pour tous les paragraphes, petit texte*/
-.card p, .bio-content p, .card-text p, .details p{
-    color: #555;
-    font-size: 1.1rem;
-}
 
 
 
