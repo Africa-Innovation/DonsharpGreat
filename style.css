@@ -231,6 +231,7 @@ header .nav li:last-child {
 }
 
 
+
 .main {
     padding-top: 55px;
     padding: 5% 8%;
@@ -620,7 +621,7 @@ footer {
     }
 
     .tab-content h3{
-       font-size: 1.5rem;   /* taille pour les titre dans propos */
+       font-size: 1.6rem;   /* taille pour les titre dans propos */
     }
 
     .propos h1{
@@ -810,6 +811,7 @@ footer {
 
 .bio-content p {
     margin-bottom: 15px;
+    font-size: 1.5rem;
 }
 
 .bio-image {
@@ -991,6 +993,10 @@ footer {
      
 }
 
+.details p{
+    font-size: 1.25rem;
+}
+
 /* Media Queries pour petits écrans */
 @media (max-width: 768px) {
     .distinction {
@@ -1007,7 +1013,7 @@ footer {
     .details {
         margin-top: 0.5rem; /* Réduction des marges */
         padding: 0.5rem;
-        font-size: 0.9rem; /* Réduire légèrement la taille de police */
+        font-size: 1.5rem; /* Réduire légèrement la taille de police */
         line-height: 1.4; /* Améliorer la lisibilité */
     }
 
