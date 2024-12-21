@@ -617,6 +617,14 @@ footer {
         /* Réduit encore la taille des boutons */
         font-size: 0.8rem;
     }
+
+    .tab-content h3{
+       font-size: 1.5rem;   /* taille pour les titre dans propos */
+    }
+
+    .propos h1{
+        font-size: 2rem;
+    }
 }
 
 
@@ -978,8 +986,8 @@ footer {
 .details {
     flex: 1;
     padding: 1rem;
-    margin-top: 1rem; /* Réduire pour s'adapter */
-    margin-top: 80px; 
+    margin-top: 5rem; /* Réduire pour s'adapter */
+     
 }
 
 /* Media Queries pour petits écrans */
@@ -994,10 +1002,20 @@ footer {
         max-width: 90%; /* Limiter la taille des images */
         height: auto;
     }
-    .details{
-        margin-top: 10px; 
-    }
-     
 
-    
+    .details {
+        margin-top: 0.5rem; /* Réduction des marges */
+        padding: 0.5rem;
+        font-size: 0.9rem; /* Réduire légèrement la taille de police */
+        line-height: 1.4; /* Améliorer la lisibilité */
+    }
+
+    h4 {
+        font-size: 1.2rem; /* Adapter le titre */
+        margin-bottom: 0.5rem;
+    }
+
+    p {
+        font-size: 0.9rem; /* Taille plus petite pour les paragraphes */
+    }
 }
