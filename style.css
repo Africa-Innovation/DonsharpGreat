@@ -573,7 +573,7 @@ footer {
 
 /* couleur pour titre comme,partenaire,disco,bio */
 
-.tab-content h3, .partenaires h3, .container h3, .container-slid h3, .details h4 {
+.tab-content h3, .partenaires h3, .container h3, .container-slid h3, .details h4, .homeBio h1{
     color: #5e8ea7;
 }
 
@@ -953,9 +953,10 @@ footer {
 /* prix distinction dans page propos */
 
 .containertest {
-    width: 90%;
+    width: 70%;
     max-width: 1200px;
     margin: 2rem auto;
+    padding: 0 1rem; /* Ajout d'un peu de marge interne pour éviter que le contenu touche les bords sur petits écrans */
 }
 .distinction {
     display: flex;
@@ -965,6 +966,7 @@ footer {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
     overflow: hidden;
+    transition: transform 0.3s ease; /* Effet de transition pour un léger zoom */
 }
 .distinction img {
     width: 100%;
@@ -976,6 +978,7 @@ footer {
     flex: 1;
     padding: 1rem;
     margin-top: 80px;
+    
 }
  
   /* Media Queries for Responsiveness */
