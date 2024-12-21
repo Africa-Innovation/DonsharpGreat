@@ -13,7 +13,7 @@ body {
 
 ul {
     list-style: none;
-    font-family: sans-serif;
+    
 }
 
 
@@ -50,7 +50,7 @@ header a {
 
 header h2 {
     text-transform: uppercase;
-    font-family: sans-serif;
+    
 }
 
 header .nav {
@@ -192,7 +192,7 @@ header .nav li:last-child {
     text-transform: uppercase;
     border: 4px solid #fff;
     transition: all .5s;
-    font-family: sans-serif;
+    
 }
 
 .box a.boxBtn:hover {
@@ -227,7 +227,7 @@ header .nav li:last-child {
 .card p, .bio-content p, .card-text p, .details p{
     color: #706b6b;
     font-size: 1.25rem;
-    text-align: justify;  /*  aligner texte au meme niveau */
+     
 }
 
 
@@ -438,7 +438,7 @@ footer {
     font-size: 1.3em;
     opacity: 0.7;
     transition: 0.5s;
-    font-family: sans-serif;
+    
 }
 
 .footerNav ul li a:hover {
@@ -453,7 +453,7 @@ footer {
 
 .footerBottom p {
     color: white;
-    font-family: sans-serif;
+    
 }
 
 .designer {
@@ -621,7 +621,7 @@ footer {
     }
 
     .tab-content h3{
-       font-size: 1.6rem;   /* taille pour les titre dans propos */
+       font-size: 1.5rem;   /* taille pour les titre dans propos */
     }
 
     .propos h1{
@@ -777,7 +777,7 @@ footer {
 .biography-section {
     max-width: 1000px;
     margin: 40px auto;
-    font-family: Arial, sans-serif;
+   
     line-height: 1.6;
     display: flex;
     flex-direction: column;
@@ -811,7 +811,7 @@ footer {
 
 .bio-content p {
     margin-bottom: 15px;
-    font-size: 1.5rem;
+    
 }
 
 .bio-image {
@@ -830,6 +830,9 @@ footer {
 
     .bio-image {
         max-width: 100%;
+    }
+    .bio-content p{
+        font-size: 1.25rem;
     }
 }
 
@@ -993,9 +996,7 @@ footer {
      
 }
 
-.details p{
-    font-size: 1.25rem;
-}
+
 
 /* Media Queries pour petits écrans */
 @media (max-width: 768px) {
@@ -1017,6 +1018,9 @@ footer {
         line-height: 1.4; /* Améliorer la lisibilité */
     }
 
+    .details p{
+        font-size: 1.25rem;
+    }
     
 
     
