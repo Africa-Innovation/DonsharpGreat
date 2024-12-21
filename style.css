@@ -226,7 +226,8 @@ header .nav li:last-child {
 /*couleur et taille pour tous les paragraphes, petit texte*/
 .card p, .bio-content p, .card-text p, .details p{
     color: #706b6b;
-    font-size: 1.1rem;
+    font-size: 1.25rem;
+    text-align: justify;  /*  aligner texte au meme niveau */
 }
 
 
@@ -1010,12 +1011,8 @@ footer {
         line-height: 1.4; /* Améliorer la lisibilité */
     }
 
-    h4 {
-        font-size: 1.2rem; /* Adapter le titre */
-        margin-bottom: 0.5rem;
-    }
+    
 
-    p {
-        font-size: 0.9rem; /* Taille plus petite pour les paragraphes */
-    }
+    
 }
+
