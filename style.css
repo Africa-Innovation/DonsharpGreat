@@ -135,6 +135,8 @@ header .nav li:last-child {
     height: auto;      /* L'hauteur est ajustée automatiquement pour maintenir les proportions */
     max-width: 100%;   /* Assurez-vous que la vidéo ne dépasse pas la largeur du conteneur */
     display: block;    /* Supprime l'espace blanc sous la vidéo */
+    object-fit: cover;
+    min-height: 100vh;
 }
 
 
