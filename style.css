@@ -485,28 +485,10 @@ footer {
     background: #ddd;
 }
 
-/* .tab-content {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-    background: #fff;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    display: none;  
-} */
-
 /* couleur pour titre comme,partenaire,disco,bio */
-
 .tab-content h3, .partenaires h3, .container h3, .container-slid h3, .details h4, .homeBio h1{
     color: #5e8ea7;
 }
-
-/* .tab-content p {
-    margin: 0;
-    font-size: 1.1rem;
-    line-height: 1.5;
-} */
-
 
 .tab-content:first-of-type {
     display: block;
@@ -552,9 +534,7 @@ footer {
 }
 
 
-
 /* disco dans la page a propos */
-
 .discography-timeline {
     display: flex;
     flex-direction: column;
@@ -592,8 +572,6 @@ footer {
     opacity: 1;
     transform: translateY(0);
 }
-
-
 
 .timeline-item:nth-child(even) {
     flex-direction: row-reverse;
@@ -656,8 +634,6 @@ footer {
     transform: translateX(20px);
 }
 
-
-
 .album-container {
     position: relative;
 }
@@ -680,7 +656,6 @@ footer {
     opacity: 1;
 }
 
-
 /* Responsivité */
 @media (max-width: 768px) {
     .timeline-item {
@@ -693,9 +668,7 @@ footer {
     }
 }
 
-
 /* biographie */
-
 .biography-section {
     max-width: 1000px;
     margin: 40px auto;
@@ -758,10 +731,7 @@ footer {
     }
 }
 
-
-
 /* partenaire page */
-
 .partenaires h3, .container h3 { 
     text-align: center;
     font-size: 2rem;
@@ -839,9 +809,7 @@ footer {
     background-color: rgba(0, 0, 0, 0.8);
 }
 
-
  /* Style pour les images de page proejts */
-
  .card-img-top {
     height: 200px; /* Hauteur fixe pour uniformiser les cartes */
     width: 100%; /* Largeur fixe pour s'adapter à la carte */
@@ -865,7 +833,6 @@ footer {
 }
 
  /* page des actualite */
-
  .carousel-item img {
     height: 500px;
     object-fit: cover;
@@ -887,7 +854,6 @@ footer {
 }
 
 /* prix distinction dans page propos */
-
 .containertest {
     width: 90%;
     max-width: 1200px;
@@ -918,8 +884,6 @@ footer {
      
 }
 
-
-
 /* Media Queries pour petits écrans */
 @media (max-width: 768px) {
     .distinction {
@@ -942,9 +906,60 @@ footer {
 
     .details p{
         font-size: 1.25rem;
-    }
-    
+    } 
+}
 
+/* section gallerie */
+.gallery-container {
+    padding: 20px;
+    text-align: center;
+}
+
+.gallery-container h3 {
+    margin-top: 100px;
+    margin-bottom: 20px; /* Ajoute de l'espace sous le texte */
+     
     
 }
 
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 colonnes */
+    gap: 20px;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 400px; /* Hauteur uniforme */
+    object-fit: cover; /* Adapte les images à la taille */
+    border-radius: 8px; /* Coins arrondis */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-item img:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+}
+/* Media Queries pour le rendu responsive */
+
+/* Pour les écrans moyens (tablettes, largeur max de 768px) */
+@media (max-width: 768px) {
+    .gallery-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 colonnes */
+    }
+
+    .gallery-item img {
+        height: 250px; /* Réduit la hauteur pour les petits écrans */
+    }
+}
+
+/* Pour les petits écrans (mobiles, largeur max de 480px) */
+@media (max-width: 480px) {
+    .gallery-grid {
+        grid-template-columns: 1fr; /* 1 colonne */
+    }
+
+    .gallery-item img {
+        height: 500px; /* Réduit encore la hauteur */
+    }
+}

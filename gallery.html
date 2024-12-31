@@ -3,85 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bootstrap Gallery</title>
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <style>
-        /* Custom styles for hover effect */
-        .gallery img {
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            width: 100%;
-            height: 400px; /* Ensures uniform size for all images */
-            object-fit: cover; /* Crops the image to fit the container */
-        }
-        .gallery img:hover {
-            transform: scale(1.05);
-            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
-        }
-        .gallery-caption {
-            background-color: rgba(0, 0, 0, 0.7);
-            color: #fff;
-            text-align: center;
-            padding: 5px;
-            position: absolute;
-            bottom: 0;
-            width: 100%;
-            opacity: 0;
-            transition: opacity 0.3s ease;
-        }
-        .gallery-item:hover .gallery-caption {
-            opacity: 1;
-        }
-    </style>
+    <title>Gallery</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container py-5">
-        <h1 class="text-center mb-4">Amazing Bootstrap Gallery</h1>
-        <div class="row g-4 gallery">
-            <!-- Gallery Item -->
-            <div class="col-md-4">
-                <div class="position-relative gallery-item">
-                    <img src="img/IMG_4978.JPG" loading="lazy" class="img-fluid rounded" alt="Image 1">
-                     
-                </div>
+    <header class="head">
+        <h2><a href="#">Donsharp de Batoro</a></h2>
+        <ul class="nav">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="Propos.html">A Propos</a></li>
+            <li><a href="projet.html">Projets</a></li>
+            <li><a href="partenaires.html">Partenaires</a></li>
+            <li><a href="video.html">Vidéos</a></li>
+            <li><a href="gallery.html">Galleries</a></li>
+            <li><a href="#footer">Contact</a></li>
+        </ul>
+    </header>
+    <div class="gallery-container container">
+        <h3 class="text-center">Gallerie</h3>
+        <div class="gallery-grid">
+            <div class="gallery-item">
+                <img src="img/Gallery/ga1.webp" alt="Image 1">
             </div>
-            <!-- Gallery Item -->
-            <div class="col-md-4">
-                <div class="position-relative gallery-item">
-                    <img src="img/IMG_0559.JPG" loading="lazy" class="img-fluid rounded" alt="Image 2">
-                     
-                </div>
+            <div class="gallery-item">
+                <img src="img/Gallery/GA2.webp" alt="Image 2">
             </div>
-            <!-- Gallery Item -->
-            <div class="col-md-4">
-                <div class="position-relative gallery-item">
-                    <img src="img/IMG_2289.PNG" loading="lazy" class="img-fluid rounded" alt="Image 3">
-                    
-                </div>
+            <div class="gallery-item">
+                <img src="img/Gallery/GA3.webp" alt="Image 3">
             </div>
-            <!-- More Gallery Items -->
-            <div class="col-md-4">
-                <div class="position-relative gallery-item">
-                    <img src="img/IMG_1736.JPG" loading="lazy" class="img-fluid rounded" alt="Image 4">
-                    
-                </div>
+            <div class="gallery-item">
+                <img src="img/Gallery/GA4.webp" alt="Image 4">
             </div>
-            <div class="col-md-4">
-                <div class="position-relative gallery-item">
-                    <img src="img/grille2.jpeg" loading="lazy" class="img-fluid rounded" alt="Image 5">
-                    
-                </div>
+            <div class="gallery-item">
+                <img src="img/Gallery/GA5.webp" alt="Image 5">
             </div>
-            <div class="col-md-4">
-                <div class="position-relative gallery-item">
-                    <img src="img/grille1.jpeg" loading="lazy" class="img-fluid rounded" alt="Image 6">
-                    
-                </div>
+            <div class="gallery-item">
+                <img src="img/Gallery/GA6.webp" alt="Image 6">
             </div>
         </div>
     </div>
 
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <section id="footer">
+        <footer>
+            <div class="footerContainer">
+                <div class="socialIcons">
+                    <a href="https://www.facebook.com/donsharpdebatoroleparolier?mibextid=LQQJ4d"><i
+                            class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.tiktok.com/@donsharpdebatoroparolier?_t=8majI8KCgEQ&_r=1"><i
+                            class="fa-brands fa-tiktok"></i></a>
+                    <a href="https://open.spotify.com/intl-fr/artist/6dstbJ5WuOnTfAZZm4bdJw"><i
+                            class="fa-brands fa-spotify"></i></a>
+    
+                </div>
+                <div class="footerNav">
+                    <ul>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="Propos.html">A Propos</a></li>
+                        <li><a href="projet.html">Projets</a></li>
+                        <li><a href="partenaires.html">Partenaires</a></li>
+                        <li><a href="video.html">Vidéos</a></li>
+                        <li><a href="gallery.html">Galleries</a></li>
+                        <li><a href="">Contact</a></li>
+    
+                    </ul>
+                </div>
+    
+            </div>
+            <div class="footerBottom">
+                <p>Copyright &copy;2024 ; Designed by <span class="designer">######</span></p>
+            </div>
+        </footer>
+    </section>
+    
+    
+    
+    
+        <!-- Lien vers Bootstrap JS -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="script.js"></script>
 </body>
 </html>
