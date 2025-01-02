@@ -139,12 +139,7 @@ header .nav li:last-child {
     min-height: 100vh;
 }
 
-
-
 /* section a propos */
-
-
-
 /*couleur et taille pour tous les paragraphes, petit texte jhi*/
 .card p, .bio-content p, .card-text p, .details p{
     color: #706b6b;
