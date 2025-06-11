@@ -17,7 +17,6 @@ ul {
 }
 
 
-
 header {
     position: fixed;
     top: 0;
@@ -131,23 +130,21 @@ header .nav li:last-child {
 /* video beginning */
 /* Assurez-vous que la vidéo s'ajuste bien à la taille de son conteneur */
 .responsive-video {
-    width: 100%;       /* La vidéo occupe toute la largeur du conteneur */
-    height: auto;      /* L'hauteur est ajustée automatiquement pour maintenir les proportions */
-    max-width: 100%;   /* Assurez-vous que la vidéo ne dépasse pas la largeur du conteneur */
-    display: block;    /* Supprime l'espace blanc sous la vidéo */
+    width: 100%;
+    height: 80vh; /* Utilisez 100vh si vous voulez couvrir tout l'écran */
     object-fit: cover;
-    min-height: 100vh;
+    object-position: center; /* Centre la vidéo pour rogner équitablement */
 }
 
 /* section a propos */
 /*couleur et taille pour tous les paragraphes, petit texte jhi*/
-.card p, .bio-content p, .card-text p, .details p{
-    color: #706b6b;
+.card p, .bio-content p, .card-text p, .details p {
+    color: #e0e0e0; /* Gris clair (meilleur contraste) */
+    /* Ou une alternative légèrement bleutée : */
+    /* color: #d1d5db; */
     font-size: 1.25rem;
-     
+    line-height: 1.6; /* Améliore la lisibilité */
 }
-
-
 
 .main {
     padding-top: 55px;
@@ -184,10 +181,12 @@ header .nav li:last-child {
 
 }
 
-.card h2 {
-    color: #37474f;
+.card h2, .bio-content h3 {
+    color: #5e8ea7; /* Bleu clair (déjà utilisé ailleurs) */
+    /* Ou un blanc cassé pour l'uniformité : */
+    /* color: #f5f5f5; */
     margin-bottom: 20px;
-
+    font-weight: 600; /* Ajoute du poids visuel */
 }
 
 
@@ -695,7 +694,6 @@ footer {
 
 .bio-content h3 {
     font-size: 1.8rem;
-    color: #37474f;
     margin-bottom: 10px;
 }
 
@@ -804,7 +802,7 @@ footer {
     background-color: rgba(0, 0, 0, 0.8);
 }
 
- /* Style pour les images de page proejts */
+ /* Style pour les images de page projets */
  .card-img-top {
     height: 200px; /* Hauteur fixe pour uniformiser les cartes */
     width: 100%; /* Largeur fixe pour s'adapter à la carte */
@@ -820,13 +818,17 @@ footer {
 }
 
 .ProjetCard {
-    background-color: #f5f5f5; /* Couleur claire pour les cartes */
+    background-color: #2c2a2a; /* Couleur claire pour les cartes */
    
     border: none;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
+.card-title{
+    color: white;
+    font-weight: bold;
+}
  /* page des actualite */
  .carousel-item img {
     height: 500px;
@@ -904,58 +906,18 @@ footer {
     } 
 }
 
-/* section gallerie */
-.gallery-container {
-    padding: 20px;
-    text-align: center;
-}
-
-.gallery-container h3 {
-    margin-top: 100px;
-    margin-bottom: 20px; /* Ajoute de l'espace sous le texte */
-     
-    
-}
-
-.gallery-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 colonnes */
-    gap: 10px;
-}
+/*gallery*/
 
 .gallery-item img {
     width: 100%;
-    height: 90%; /* Hauteur uniforme */
-    object-fit: fill; /* Adapte les images à la taille */
-    border-radius: 8px; /* Coins arrondis */
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.gallery-item img:hover {
-    transform: scale(1.05);
-    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
-}
-/* Media Queries pour le rendu responsive */
-
-/* Pour les écrans moyens (tablettes, largeur max de 768px) */
-@media (max-width: 768px) {
-    .gallery-grid {
-        grid-template-columns: repeat(2, 1fr); /* 2 colonnes */
-    }
-
-    .gallery-item img {
-        height: 450px; /* Réduit la hauteur pour les petits écrans */
-    }
-}
-
-/* Pour les petits écrans (mobiles, largeur max de 480px) */
-@media (max-width: 480px) {
-    .gallery-grid {
-        grid-template-columns: 1fr; /* 1 colonne */
-    }
-
-    .gallery-item img {
-        height: 300px; /* Réduit encore la hauteur */
-        width: 100%;
-    }
-}
+    height: 200px; /* tu peux ajuster selon ton besoin */
+    object-fit: cover;
+    object-position: center;
+    border-radius: 0.5rem;
+    transition: transform 0.3s ease;
+  }
+  
+  .gallery-item img:hover {
+    transform: scale(1.03);
+  }
+  
