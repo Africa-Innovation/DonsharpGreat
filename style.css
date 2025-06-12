@@ -187,7 +187,7 @@ header .nav li:last-child {
     line-height: 1.6;
 }
 
-.bio-contentP, .details p{
+p{
     font-size: 1.25rem;
 }
 
