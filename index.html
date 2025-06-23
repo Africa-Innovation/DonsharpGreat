@@ -8,7 +8,7 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://unpkg.com/scrollreveal"></script>
-
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -38,88 +38,121 @@
         </video>
     </section> -->
     <div style="display: flex; align-items: center; justify-content: center; width: 100%; max-height: 100vh; background-color: #000; overflow: hidden;"
-     class="embed-responsive embed-responsive-16by9">
-    <video src="video/DONSHARP DE BATORO - SOUNDJATA le fils du buffle (clip officiel).mp4" autoplay muted controls
-           style="width: 100%; height: 100%; max-height: 100vh; object-fit: contain;">
-        video non supporter.
-    </video>
-</div>
+        class="embed-responsive embed-responsive-16by9">
+        <video src="video/DONSHARP DE BATORO - SOUNDJATA le fils du buffle (clip officiel).mp4" autoplay muted controls
+            style="width: 100%; height: 100%; max-height: 100vh; object-fit: contain;">
+            video non supporter.
+        </video>
+    </div>
 
 
 
     <div class="main">
 
 
-        <section class="cardpropos">
+        <section class="values-section">
             <div class="container">
-                <div class="service-wrapper">
-                    <div class="service">
+                <h2 class="section-title">Nos Engagements</h2>
+                <p class="section-subtitle">Découvrez les piliers de notre action</p>
 
-                        <div class="cards">
-                            <div class="card">
-                                <i class="fas fa-heart fa-3x"></i>
-                                <h2>VALEURS</h2>
-                                <p>
-                                    Le vivre-ensemble, la solidarité, le
-                                    partage
+                <div class="values-grid">
+                    <!-- Valeurs -->
+                    <div class="value-card" data-aos="fade-up" data-aos-delay="50">
+                        <div class="card-icon">
+                            <i class="fas fa-heart"></i>
+                            <div class="icon-bg"></div>
+                        </div>
+                        <h3>VALEURS</h3>
+                        <div class="card-content">
+                            <p>Fraternité - Solidarité - Vivre-ensemble</p>
+                        </div>
+                        <div class="card-hover-content">
+                            <p>Ces valeurs fondamentales guident chacune de nos initiatives et collaborations.</p>
+                        </div>
+                    </div>
+
+                    <!-- Vision -->
+                    <div class="value-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="card-icon">
+                            <i class="fas fa-eye"></i>
+                            <div class="icon-bg"></div>
+                        </div>
+                        <h3>VISION</h3>
+                        <div class="card-content">
+                            <p>Paix Amour Unité</p>
+                        </div>
+                        <div class="card-hover-content">
+                            <p>Notre boussole pour construire un avenir harmonieux et prospère.</p>
+                        </div>
+                    </div>
+
+                    <!-- Projets -->
+                    <div class="value-card" data-aos="fade-up" data-aos-delay="150">
+                        <div class="card-icon">
+                            <i class="fas fa-project-diagram"></i>
+                            <div class="icon-bg"></div>
+                        </div>
+                        <h3>PROJETS EN COURS</h3>
+                        <div class="card-content">
+                            <p>Créer un complexe audiovisuel pour la production musicale et visuelle.</p>
+                        </div>
+                        <div class="card-hover-content">
+                            <p>Un espace dédié à la création artistique et à la formation des jeunes talents.</p>
+                            <a href="projet.html#EnCours" class="learn-more">En savoir plus →</a>
+                        </div>
+                    </div>
+
+                    <!-- Objectifs -->
+                    <div class="value-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="card-icon">
+                            <i class="fas fa-bullseye"></i>
+                            <div class="icon-bg"></div>
+                        </div>
+                        <h3>OBJECTIFS</h3>
+                        <div class="card-content">
+                            <p>
+                                Œuvrer pour l’éducation, l’accès à l’eau potable, le soutien à l’agriculture, aux start-ups et aux créateurs locaux, tout en promouvant l’écologie et le civisme.
                                 </p>
-                                <!-- <button class="btn-more" onclick="openModal('valeurs')">En savoir plus</button> -->
-                            </div>
+                        </div>
+                        <div class="card-hover-content">
+                            <p>Des objectifs concrets pour un impact tangible sur les communautés.</p>
+                            <a href="projet.html" class="learn-more">Voir les projets →</a>
+                        </div>
+                    </div>
 
-                            <div class="card">
-                                <i class="fas fa-eye fa-3x"></i>
-                                <h2>VISION</h2>
-                                <p>
-                                    Paix Amour Unité
-
+                    <!-- Actions -->
+                    <div class="value-card" data-aos="fade-up" data-aos-delay="250">
+                        <div class="card-icon">
+                            <i class="fas fa-hands-helping"></i>
+                            <div class="icon-bg"></div>
+                        </div>
+                        <h3>ACTIONS MENEES</h3>
+                        <div class="card-content">
+                            <p>
+                                Soutien aux patients insuffisants rénaux à l’hôpital Sourou Sanou par la fourniture de dialyseurs, et co-animation de l’émission **JE SLAM POUR MA PATRIE** (2013-2014) sur le civisme et le patriotisme, diffusée sur la RTB.
                                 </p>
-                                <!-- <button class="btn-more" onclick="openModal('vision')">En savoir plus</button> -->
+                        </div>
+                        <div class="card-hover-content">
+                            <p>Des réalisations concrètes qui changent déjà des vies.</p>
+                            <a href="actualite.html" class="learn-more">En savoir plus →</a>
+                        </div>
+                    </div>
 
-                            </div>
-                            <div class="card">
-                                <i class="fas fa-project-diagram fa-3x"></i>
-                                <h2>PROJETS EN COURS</h2>
-                                <p>
-                                    Créer un complexe audiovisuel pour la production musicale et visuelle.
+                    <!-- Missions -->
+                    <div class="value-card" data-aos="fade-up" data-aos-delay="300">
+                        <div class="card-icon">
+                            <i class="fas fa-star"></i>
+                            <div class="icon-bg"></div>
+                        </div>
+                        <h3>MISSIONS</h3>
+                        <div class="card-content">
+                            <p> 
+                                Promouvoir des opportunités durables, une éducation de qualité et l'avenir des jeunes pour faire du Burkina Faso un modèle de paix, de prospérité et de respect des droits.
                                 </p>
-
-                                <!-- <button class="btn-more" onclick="openModal('objectifs')">En savoir plus</button> -->
-
-                            </div>
-                            <div class="card">
-                                <i class="fas fa-bullseye fa-3x"></i>
-                                <h2>OBJECTIFS</h2>
-                                <p>
-                                    Construire des écoles, améliorer l'accès à l'eau potable, soutenir l'agriculture,
-                                    les start-ups et les créateurs locaux, promouvoir l'éducation et l'écologie, et
-                                    sensibiliser au civisme.
-                                </p>
-                                <!-- <button class="btn-more" onclick="openModal('project')">En savoir plus</button> -->
-
-                            </div>
-                            <div class="card">
-                                <i class="fas fa-hands-helping fa-3x"></i>
-                                <h2>ACTIONS MENEES</h2>
-                                <p>
-                                    Fourniture de dialyseurs à l’hôpital Sourou Sanou pour les patients atteints
-                                    d’insuffisance rénale,
-                                    et co-animation de l’émission <strong> JE SLAM POUR MA PATRIE </strong> (2013-2014)
-                                    sur le civisme et le patriotisme, diffusée sur la RTB nationale.
-                                </p>
-                                <!-- <button class="btn-more" onclick="openModal('action')">En savoir plus</button> -->
-
-                            </div>
-                            <div class="card">
-                                <i class="fas fa-star fa-3x"></i>
-                                <h2>MISSIONS</h2>
-                                <p>
-                                    Créer des opportunités durables en Afrique, garantir une éducation de qualité,
-                                    offrir des perspectives aux jeunes et faire du Burkina Faso un modèle de paix,
-                                    de prospérité et de respect des droits.
-                                </p>
-                                <!-- <button class="btn-more" onclick="openModal('mission')">En savoir plus</button> -->
-
-                            </div>
+                        </div>
+                        <div class="card-hover-content">
+                            <p>Notre raison d'être et notre engagement quotidien.</p>
+                            <a href="Propos.html" class="learn-more">Découvrir →</a>
                         </div>
                     </div>
                 </div>
@@ -297,6 +330,14 @@
             </div>
         </footer>
     </section>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true
+        });
+    </script>
     <script src="script.js"></script>
 </body>
 
