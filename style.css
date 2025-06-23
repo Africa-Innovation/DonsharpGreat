@@ -234,7 +234,7 @@ header .nav li:last-child {
     position: relative;
     width: 60px;
     height: 60px;
-    margin-bottom: 1.5rem;
+     
 }
 
 .card-icon i {
@@ -256,13 +256,14 @@ header .nav li:last-child {
 }
 
 .card-content {
+    margin-bottom: 1rem;
     transition: all 0.4s ease;
 }
 
 .card-content p {
-    color: #e0e0e0;
+     text-align: center;
     line-height: 1.6;
-    font-size: 1rem;
+     
 }
 
 .card-hover-content {
@@ -324,6 +325,18 @@ header .nav li:last-child {
     transform: translateX(3px);
 }
 
+
+.card-content p,
+.bio-content p{
+    color: #e0e0e0;
+    line-height: 1.6;
+}
+
+p{
+    font-size: 1rem;
+}
+
+
 /* Responsive */
 @media (max-width: 768px) {
     .values-grid {
@@ -351,17 +364,9 @@ header .nav li:last-child {
     .section-title {
         font-size: 2rem;
     }
-}
-
-.cards p,
-.bio-content p{
-    color: #e0e0e0;
-    line-height: 1.6;
-}
-
-
-p{
-    font-size: 1rem;
+    .card-content p{
+        font-size: 1rem;
+    }
 }
 
 .bio-content h3 {
