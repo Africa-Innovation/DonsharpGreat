@@ -154,7 +154,7 @@ header .nav li:last-child {
 
 /* Values Section */
 .values-section {
-    padding: 5rem 2rem;
+    padding: 1rem 0rem;
     background-color: #1e1e1e;
     position: relative;
     overflow: hidden;
@@ -342,30 +342,32 @@ p{
     .values-grid {
         grid-template-columns: 1fr;
     }
-    
+
     .value-card {
+        width: 100%;
+        max-width: 100%;
         height: auto;
-        min-height: 250px;
+        padding: 1.5rem;
     }
-    
+
     .card-hover-content {
-        position: relative;
-        opacity: 1;
-        transform: none;
-        padding: 1rem 0 0 0;
-        background: transparent;
+        display: none;
     }
-    
+
+    .value-card:hover .card-hover-content {
+        display: none;
+    }
+
     .value-card:hover .card-content {
         opacity: 1;
         transform: none;
     }
-    
+
     .section-title {
-        font-size: 2rem;
+        font-size: 2.5rem;
     }
     .card-content p{
-        font-size: 1rem;
+        font-size: 1.5rem;
     }
 }
 
