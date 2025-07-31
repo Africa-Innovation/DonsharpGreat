@@ -5,10 +5,22 @@
     box-sizing: border-box;
 }
 
-body {
-    font-family: nexa;
-    background-color: #2c2a2a;
+/* Base Typography */
+:root {
+    --h1-size: clamp(2.5rem, 5vw, 3.5rem);
+    --h2-size: clamp(2rem, 4vw, 2.5rem);
+    --h3-size: clamp(1.5rem, 3vw, 2rem);
+    --h4-size: clamp(1.25rem, 2.5vw, 1.5rem);
+    --body-size: clamp(1rem, 1.5vw, 1.2rem);
+    --small-size: clamp(0.875rem, 1vw, 1rem);
+}
 
+body {
+    font-family: nexa, 'Helvetica Neue', Arial, sans-serif;
+    background-color: #2c2a2a;
+    font-size: var(--body-size);
+    line-height: 1.6;
+    color: #e0e0e0;
 }
 
 ul {
@@ -49,7 +61,8 @@ header a {
 
 header h2 {
     text-transform: uppercase;
-
+    font-size: var(--h4-size);
+    letter-spacing: 0.5px;
 }
 
 header .nav {
@@ -62,7 +75,13 @@ header .nav {
 
 header .nav li {
     margin: 0 15px;
+}
 
+header .nav li a {
+    font-size: var(--small-size);
+    font-weight: 500;
+    padding: 0.5rem 0.8rem;
+    transition: all 0.3s ease;
 }
 
 header .nav li:hover {
@@ -127,20 +146,38 @@ header .nav li:last-child {
     }
 }
 
-/* video beginning */
-/* Assurez-vous que la vidéo s'ajuste bien à la taille de son conteneur */
-/* .responsive-video {
+/* Video container styles */
+.video-container {
+    position: relative;
     width: 100%;
     height: 100vh;
+    background-color: #000;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -90px; /* Compense la hauteur du header */
+}
+
+.hero-video {
+    width: 100%;
+    height: 100%;
     object-fit: cover;
-    object-position: center;
+    position: relative;
+    z-index: 1;
 }
 
 @media (max-width: 768px) {
-    .responsive-video {
-        height: 80vh;
+    .video-container {
+        height: calc(100vh - 90px); /* Ajuste la hauteur en tenant compte du header */
     }
-} */
+    
+    .hero-video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
 
 /* section a propos */
 /*couleur et taille pour tous les paragraphes, petit texte jhi*/
@@ -173,21 +210,26 @@ header .nav li:last-child {
 
 .section-title {
     text-align: center;
-    font-size: 2.5rem;
+    font-size: var(--h2-size);
     margin-bottom: 1rem;
     color: #5e8ea7;
     position: relative;
     z-index: 1;
+    font-weight: 700;
+    letter-spacing: -0.02em;
 }
 
 .section-subtitle {
     text-align: center;
     color: #e0e0e0;
-    font-size: 1.1rem;
+    font-size: var(--body-size);
     margin-bottom: 3rem;
     position: relative;
     z-index: 1;
     opacity: 0.9;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .values-grid {
@@ -261,9 +303,11 @@ header .nav li:last-child {
 }
 
 .card-content p {
-     text-align: center;
+    text-align: center;
     line-height: 1.6;
-     
+    font-size: var(--body-size);
+    color: #e0e0e0;
+    margin-bottom: 1.5rem;
 }
 
 .card-hover-content {
@@ -273,14 +317,14 @@ header .nav li:last-child {
     width: 100%;
     height: 100%;
     padding: 2rem;
-    background: rgba(44, 42, 42, 0.95);
+    background: rgba(44, 42, 42, 0.98);
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     opacity: 0;
     transform: translateY(20px);
     transition: all 0.4s ease;
-    padding-top: 10rem;
+    padding-top: 8rem;
 }
 
 .value-card:hover .card-hover-content {
@@ -296,14 +340,14 @@ header .nav li:last-child {
 .card-hover-content p {
     color: #e0e0e0;
     margin-bottom: 1.5rem;
-    font-size: 0.95rem;
+    font-size: 1rem;
 }
 
 .learn-more {
     color: #5e8ea7;
     text-decoration: none;
     font-weight: 600;
-    font-size: 0.9rem;
+    font-size: 1rem;
     display: inline-flex;
     align-items: center;
     transition: all 0.3s ease;
@@ -367,7 +411,7 @@ p{
         font-size: 2.5rem;
     }
     .card-content p{
-        font-size: 1.5rem;
+        font-size: 1.1rem;
     }
 }
 
@@ -519,10 +563,11 @@ footer {
     color: white;
     margin: 10px;
     text-decoration: none;
-    font-size: 1.3em;
-    opacity: 0.7;
-    transition: 0.5s;
-
+    font-size: var(--body-size);
+    opacity: 0.85;
+    transition: all 0.3s ease;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
 }
 
 .footerNav ul li a:hover {
@@ -869,13 +914,19 @@ footer {
 }
 
 .bio-content h3 {
-    font-size: 1.8rem;
-    margin-bottom: 10px;
+    font-size: var(--h3-size);
+    margin-bottom: 1.5rem;
+    color: #5e8ea7;
+    font-weight: 600;
+    line-height: 1.2;
 }
 
 .bio-content p {
-    margin-bottom: 15px;
-
+    margin-bottom: 1.5rem;
+    font-size: var(--body-size);
+    line-height: 1.8;
+    color: #e0e0e0;
+    max-width: 65ch;
 }
 
 .bio-image {
@@ -1011,17 +1062,23 @@ footer {
 }
 
 .ProjetCard {
-    background-color: white;
-    /* Couleur claire pour les cartes */
-
+    background-color: rgba(44, 42, 42, 0.9);
     border: none;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
+.ProjetCard p {
+    color: #e0e0e0;
+    font-size: var(--body-size);
+    line-height: 1.6;
+}
+
 .card-title {
-    color: white;
+    color: #5e8ea7;
     font-weight: bold;
+    font-size: var(--h4-size);
+    margin-bottom: 1rem;
 }
 
 /* page des actualite */
@@ -1039,6 +1096,21 @@ footer {
 .actualitecard {
     border: none;
     transition: transform 0.3s ease-in-out;
+    background-color: rgba(44, 42, 42, 0.9);
+}
+
+.actualitecard p {
+    font-size: var(--body-size);
+    line-height: 1.6;
+    color: #e0e0e0;
+    margin-bottom: 1rem;
+}
+
+.actualitecard .card-title {
+    font-size: var(--h4-size);
+    margin-bottom: 1rem;
+    color: #5e8ea7;
+    font-weight: 600;
 }
 
 .actualitecard:hover {
@@ -1075,10 +1147,24 @@ footer {
 
 .details {
     flex: 1;
-    padding: 1rem;
-    margin-top: 5rem;
-    /* Réduire pour s'adapter */
+    padding: 2rem;
+    margin-top: 2rem;
+    color: #333;
+}
 
+.details h4 {
+    font-size: var(--h4-size);
+    color: #5e8ea7;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.details p {
+    font-size: var(--body-size);
+    line-height: 1.8;
+    color: #4a4a4a;
+    margin-bottom: 1.5rem;
+    max-width: 65ch;
 }
 
 /* Media Queries pour petits écrans */
