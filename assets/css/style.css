@@ -38,54 +38,74 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* Aligne tous les enfants verticalement au centre */
     color: #fff;
-    padding: 5px 100px 0;
-    height: 90px;
-    transition: background-color 0.3s;
-    /* Animation de transition */
+    padding: 0 50px;
+    height: 80px;
+    background-color: rgba(0, 0, 0, 0.9);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
 }
 
 header a {
-    text-transform: capitalize;
-    font-weight: 900;
     text-decoration: none;
     color: inherit;
     cursor: pointer;
 }
 
 .head.scrolled {
-    background-color: rgba(0, 0, 0, 0.7);
-    /* Couleur de fond rouge lorsque l'utilisateur fait défiler */
+    background-color: rgba(0, 0, 0, 0.95);
 }
 
 header h2 {
-    text-transform: uppercase;
     font-size: var(--h4-size);
-    letter-spacing: 0.5px;
+    font-weight: 700;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 header .nav {
     display: flex;
-    flex-direction: row;
-    margin-left: auto;
-    /* Pousse les liens de navigation vers la droite */
-    transition: all 0.3s ease-in-out;
+    align-items: center;
+    gap: 2rem;
+    height: 100%;
 }
 
 header .nav li {
-    margin: 0 15px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
 }
 
 header .nav li a {
-    font-size: var(--small-size);
-    font-weight: 500;
-    padding: 0.5rem 0.8rem;
-    transition: all 0.3s ease;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 0.5rem 0;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    position: relative;
+    height: 100%;
+    display: flex;
+    align-items: center;
 }
 
-header .nav li:hover {
+header .nav li a::after {
+    content: '';
+    position: absolute;
+    bottom: 25px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #5e8ea7;
+    transition: width 0.3s ease;
+}
+
+header .nav li:hover a {
     color: #5e8ea7;
+}
+
+header .nav li:hover a::after {
+    width: 100%;
 }
 
 header .nav li:first-child {
@@ -99,50 +119,67 @@ header .nav li:last-child {
 /* Styles pour le menu hamburger */
 .hamburger {
     display: none;
-    /* Caché par défaut */
     font-size: 1.8rem;
     color: #fff;
     cursor: pointer;
     margin-left: 20px;
-    /* Espace entre le menu et le hamburger */
+    transition: transform 0.3s ease;
+}
+
+.hamburger:hover {
+    transform: scale(1.1);
 }
 
 /* Media queries pour les petits écrans */
 @media (max-width: 1000px) {
     header {
-        flex-direction: row;
-        padding: 10px 20px;
+        padding: 0 20px;
     }
 
     header .nav {
         display: none;
-        /* Masquer les liens par défaut */
         flex-direction: column;
         position: absolute;
-        top: 90px;
-        right: 10px;
-        background: rgba(0, 0, 0, 0.7);
-        ;
-        /* Fond du menu */
-        width: 200px;
-        padding: 10px;
-        border-radius: 10px;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.95);
+        padding: 0;
         z-index: 20;
     }
 
     header .nav.active {
         display: flex;
-        /* Afficher les liens lorsqu'on clique sur le menu */
     }
 
     header .nav li {
-        margin: 10px 0;
-        /* Espacement vertical entre les liens */
+        height: auto;
+        width: 100%;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    header .nav li:last-child {
+        border-bottom: none;
+    }
+
+    header .nav li a {
+        padding: 15px 20px;
+        width: 100%;
+        justify-content: center;
+        font-size: 14px;
+    }
+
+    header .nav li a::after {
+        display: none;
+    }
+
+    header .nav li:hover a {
+        background-color: rgba(94, 142, 167, 0.1);
     }
 
     .hamburger {
         display: block;
-        /* Afficher le menu hamburger */
+        font-size: 24px;
     }
 }
 
