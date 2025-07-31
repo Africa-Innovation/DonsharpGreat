@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- Lien vers Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <title>Projets</title>
+</head>
+
+<body>
+    <header class="head">
+        <h2><a href="../index.html">Donsharp de Batoro</a></h2>
+        <ul class="nav">
+            <li><a href="../index.html">Accueil</a></li>
+            <li><a href="Propos.html">A Propos</a></li>
+            <li><a href="projet.html">Projets</a></li>
+            <li><a href="partenaires.html">Partenaires</a></li>
+            <li><a href="actualite.html">Actualités</a></li>
+            <li><a href="video.html">Vidéos</a></li>
+            <li><a href="gallery.html">Galleries</a></li>
+            <li><a href="#footer">Contact</a></li>
+        </ul>
+        <div class="hamburger">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </header>
+    <section class="projets">
+        <div class="container mt-5">
+            <h3 class="text-center mb-4">Nos Projets</h3>
+
+            <div class="row row-cols-1 row-cols-md-2 g-4">
+                <!-- Première carte -->
+                <div class="col">
+                    <div class="card ProjetCard">
+                        <img src="../assets/images/projet/TPM.webp" class="card-img-top" alt="Projet 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Réalisation de la marque TPM (Terre de la Prochaine Migration)</h5>
+                            <p class="card-text">La confection est réalisée directement dans notre atelier de couture,
+                                avec pour objectif de favoriser la création d'emplois locaux.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Deuxième carte -->
+                <div class="col">
+                    <div class="card ProjetCard">
+                        <img src="../assets/images/projet/prestige.webp" class="card-img-top" alt="Projet 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Réalisation d'un concert prestige chaque année</h5>
+                            <p class="card-text">Chaque édition est axée sur un
+                                thème social, comme la lutte contre l'insuffisance, et a permis de collecter des fonds
+                                pour des causes
+                                importantes, comme l'achat de dialyseurs pour l'hôpital Sourou Sanou.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Troisième carte -->
+                <div class="col">
+                    <div class="card ProjetCard">
+                        <img src="../assets/images/projet/dialyse.webp" class="card-img-top" alt="Projet 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Don de dialyseurs pour l'hôpital Sourou Sanou</h5>
+                            <p class="card-text">Un don de dialyseurs a été fait à l'hôpital Sourou Sanou
+                                pour améliorer les soins des patients rénaux et renforcer les capacités de traitement en
+                                dialyse dans la région.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Quatrième carte -->
+                <div class="col">
+                    <div class="card ProjetCard">
+                        <img src="../assets/images/projet/covid.webp" class="card-img-top" alt="Projet 4">
+                        <div class="card-body">
+                            <h5 class="card-title">Réalisation de 14 capsules vidéos</h5>
+                            <p class="card-text">Ces vidéos ont été utilisées pour sensibiliser le public à la COVID-19.
+                                Elles ont été diffusées quatre fois par jour sur BF1 tout au long de l'année.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- 5em carte -->
+                <div class="col">
+                    <div class="card ProjetCard">
+                        <video class="card-img-top" controls>
+                            <source src="../assets/video/artiste.mp4" type="video/mp4">
+                            Votre navigateur ne supporte pas la vidéo.
+                        </video>
+                        <div class="card-body">
+                            <h5 class="card-title">Productions d’artistes en herbes</h5>
+                            <p class="card-text">Ce projet met en valeur les créations d'artistes en début de carrière,
+                                en mettant l'accent
+                                sur leur talent et leur potentiel. Les œuvres présentées, qu'elles soient visuelles,
+                                musicales ou théâtrales, témoignent de l'imagination et de l'originalité de ces jeunes
+                                créateurs..</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section id="EnCours">
+        <div class="container-slid mt-5">
+            <h3 class="text-center mb-4">Projets à Venir</h3>
+            <div style="background-color: #333333;color: #ffffff;" id="carouselProjets" class="carousel slide"
+                data-bs-ride="carousel">
+                <!-- Indicateurs -->
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselProjets" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselProjets" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselProjets" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselProjets" data-bs-slide-to="3"
+                        aria-label="Slide 4"></button>
+                    <button type="button" data-bs-target="#carouselProjets" data-bs-slide-to="4"
+                        aria-label="Slide 5"></button>
+                </div>
+
+                <!-- Contenu du carousel -->
+                <div class="carousel-inner">
+                    <!-- Première diapositive -->
+                    <div class="carousel-item active">
+                        <div class="d-flex justify-content-center align-items-center" style="height: 200px;">
+                            <h4 class="text-center"> Productions d’artistes en herbes</h4>
+                        </div>
+                    </div>
+                    <!-- Deuxième diapositive -->
+                    <div class="carousel-item">
+                        <div class="d-flex justify-content-center align-items-center" style="height: 200px;">
+                            <h4 class="text-center">Création d’une identité musicale urbaine appelée WAGALI (en dioula Ouverture)</h4>
+                        </div>
+                    </div>
+                    <!-- Troisième diapositive -->
+                    <div class="carousel-item">
+                        <div class="d-flex justify-content-center align-items-center" style="height: 200px;">
+                            <h4 class="text-center">Organisation de la 7eme édition du concert prestige </h4>
+                        </div>
+                    </div>
+                    <!-- 4 diapositive -->
+                    <div class="carousel-item">
+                        <div class="d-flex justify-content-center align-items-center" style="height: 200px;">
+                            <h4 class="text-center">Création d’un complexe audiovisuel </h4>
+                        </div>
+                    </div>
+                    <!-- 5 diapositive -->
+                    <div class="carousel-item">
+                        <div class="d-flex justify-content-center align-items-center" style="height: 200px;">
+                            <h4 class="text-center">Construction d’écoles en zone vulnérables, forages, maternités</h4>
+                        </div>
+                    </div>
+                    <!-- 6 diapositive -->
+                    <div class="carousel-item">
+                        <div class="d-flex justify-content-center align-items-center" style="height: 200px;">
+                            <h4 class="text-center">Préparation de la sortie du 7eme album musical de l’artiste</h4>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="d-flex justify-content-center align-items-center" style="height: 200px;">
+                            <h4 class="text-center">Caravane de sensibilisation sur le civisme le patriotisme en faveur des Forces de Défense et de Sécurité (FDS) et Volontaires pour la Défense de la Patrie (VDP) dénommée Burkina KANOU</h4>
+                        </div>
+                    </div>
+
+                    <!-- Boutons de contrôle -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselProjets"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Précédent</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselProjets"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Suivant</span>
+                    </button>
+                </div>
+            </div>
+    </section>
+
+
+    <section id="footer">
+        <footer>
+            <div class="footerContainer">
+                <div class="socialIcons">
+                    <a href="https://www.facebook.com/donsharpdebatoroleparolier?mibextid=LQQJ4d"><i
+                            class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.tiktok.com/@donsharpdebatoroparolier?_t=8majI8KCgEQ&_r=1"><i
+                            class="fa-brands fa-tiktok"></i></a>
+                    <a href="https://open.spotify.com/intl-fr/artist/6dstbJ5WuOnTfAZZm4bdJw"><i
+                            class="fa-brands fa-spotify"></i></a>
+
+                </div>
+                <div class="footerNav">
+                    <ul>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="Propos.html">A Propos</a></li>
+                        <li><a href="projet.html">Projets</a></li>
+                        <li><a href="partenaires.html">Partenaires</a></li>
+                        <li><a href="video.html">Vidéos</a></li>
+                        <li><a href="gallery.html">Galleries</a></li>
+                        <li><a href="">Contact</a></li>
+
+                    </ul>
+                </div>
+
+            </div>
+            <div class="footerBottom">
+                <p>Copyright &copy;2024 ; Designed by <span class="designer">######</span></p>
+            </div>
+        </footer>
+    </section>
+
+
+
+
+    <!-- Lien vers Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/js/script.js"></script>
+</body>
+
+</html>
