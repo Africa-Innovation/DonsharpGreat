@@ -149,14 +149,16 @@ header .nav li:last-child {
 /* Video container styles */
 .video-container {
     position: relative;
-    width: 100%;
+    width: 100vw;
     height: 100vh;
+    max-width: 100%;
     background-color: #000;
     overflow: hidden;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: -90px; /* Compense la hauteur du header */
+    margin: 0;
+    padding: 0;
 }
 
 .hero-video {
@@ -165,6 +167,21 @@ header .nav li:last-child {
     object-fit: cover;
     position: relative;
     z-index: 1;
+}
+
+@media (max-width: 768px) {
+    .video-container {
+        height: calc(100vh - 90px);
+        width: 100%;
+        margin-top: 90px;
+    }
+
+    .hero-video {
+        width: 100%;
+        max-width: 100%;
+        margin: 0;
+        padding: 0;
+    }
 }
 
 @media (max-width: 768px) {
