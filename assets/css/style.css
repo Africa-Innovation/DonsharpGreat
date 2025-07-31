@@ -223,7 +223,7 @@ header .nav li:last-child {
 
 @media (max-width: 768px) {
     .video-container {
-        height: calc(50vh - 120px); /* Réduit la hauteur du conteneur */
+        height: calc(55vh - 120px); /* Réduit la hauteur du conteneur */
         display: flex;
         align-items: flex-start;
         padding-top: 45px;
