@@ -268,29 +268,6 @@ header .nav li:last-child {
     z-index: 0;
 }
 
-.section-title {
-    text-align: center;
-    font-size: var(--h2-size);
-    margin-bottom: 1rem;
-    color: #5e8ea7;
-    position: relative;
-    z-index: 1;
-    font-weight: 700;
-    letter-spacing: -0.02em;
-}
-
-.section-subtitle {
-    text-align: center;
-    color: #e0e0e0;
-    font-size: var(--body-size);
-    margin-bottom: 3rem;
-    position: relative;
-    z-index: 1;
-    opacity: 0.9;
-    max-width: 800px;
-    margin-left: auto;
-    margin-right: auto;
-}
 
 .values-grid {
     display: grid;
@@ -305,12 +282,12 @@ header .nav li:last-child {
 .value-card {
     background: rgba(44, 42, 42, 0.8);
     border-radius: 12px;
-    padding: 2rem;
+     
     transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.1);
     position: relative;
     overflow: hidden;
     border: 1px solid rgba(94, 142, 167, 0.2);
-    height: 410px;
+    height: 250px;
     display: flex;
     flex-direction: column;
 }
@@ -340,7 +317,7 @@ header .nav li:last-child {
 }
 
 .card-icon i {
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: #5e8ea7;
     position: relative;
     z-index: 2;
@@ -350,8 +327,8 @@ header .nav li:last-child {
     position: absolute;
     top: -10px;
     left: -10px;
-    width: 60px;
-    height: 60px;
+    width: 45px;
+    height: 45px;
     background-color: rgba(94, 142, 167, 0.1);
     border-radius: 50%;
     z-index: 1;
@@ -451,7 +428,7 @@ p{
         width: 100%;
         max-width: 100%;
         height: auto;
-        padding: 1.5rem;
+         
     }
 
     .card-hover-content {
@@ -467,9 +444,7 @@ p{
         transform: none;
     }
 
-    .section-title {
-        font-size: 2.5rem;
-    }
+     
     .card-content p{
         font-size: 1.1rem;
     }
@@ -1115,9 +1090,9 @@ footer {
 .container h3,
 .container-slid h3 {
 
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: bold;
-    margin-top: 50px;
+    margin-top: 0px;
 
 }
 
