@@ -66,7 +66,7 @@ header h2 {
 header .nav {
     display: flex;
     align-items: center;
-    gap: 1.5rem;
+    gap: 2rem;
     height: 100%;
 }
 
@@ -78,16 +78,15 @@ header .nav li {
 }
 
 header .nav li a {
-    font-size: 14px;
-    font-weight: 500;
-    padding: 0.3rem 0;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 0.5rem 0;
     text-transform: uppercase;
     letter-spacing: 0.5px;
     position: relative;
     height: 100%;
     display: flex;
     align-items: center;
-    white-space: nowrap;
 }
 
 header .nav li a::after {
@@ -652,49 +651,26 @@ footer {
 
 /* deuxieme page a propos */
 .background-section {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/IMG_8195.webp");
+    background-image: url("img/bgrd-propos.webp");
+    /* Chemin de l'image */
     background-size: cover;
+    /* L'image couvre toute la section */
     background-position: center;
+    /* Centre l'image */
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    /* Évite de répéter l'image */
     height: 100vh;
+    /* Hauteur de la section : toute la hauteur de l'écran */
     display: flex;
+    /* Utilisé pour centrer le contenu */
     justify-content: center;
+    /* Centrer horizontalement */
     align-items: center;
-    position: relative;
-}
-
-.background-section::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: linear-gradient(45deg, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.4) 100%);
-    z-index: 1;
-}
-
-.background-section h1 {
+    /* Centrer verticalement */
     color: white;
-    font-size: 3.5rem;
-    font-weight: 700;
-    text-align: center;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    position: relative;
-    z-index: 2;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    padding: 20px;
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-@media (max-width: 768px) {
-    .background-section h1 {
-        font-size: 2rem;
-        padding: 15px;
-    }
+    /* Texte en blanc */
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+    /* Ombre pour rendre le texte lisible */
 }
 
 /* .h1 {
@@ -1114,9 +1090,9 @@ footer {
 .container h3,
 .container-slid h3 {
 
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: bold;
-    margin-top: 120px;
+    margin-top: 35px;
 
 }
 
