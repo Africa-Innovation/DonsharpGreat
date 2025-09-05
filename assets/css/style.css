@@ -649,28 +649,58 @@ footer {
 
 
 
-/* deuxieme page a propos */
+/* Section d'en-tête de la page À propos */
 .background-section {
-    background-image: url("img/bgrd-propos.webp");
-    /* Chemin de l'image */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../images/IMG_8195.webp");
     background-size: cover;
-    /* L'image couvre toute la section */
-    background-position: center;
-    /* Centre l'image */
+    background-position: center 25%;
     background-repeat: no-repeat;
-    /* Évite de répéter l'image */
-    height: 100vh;
-    /* Hauteur de la section : toute la hauteur de l'écran */
+    background-attachment: fixed;
+    height: 80vh;
     display: flex;
-    /* Utilisé pour centrer le contenu */
     justify-content: center;
-    /* Centrer horizontalement */
     align-items: center;
-    /* Centrer verticalement */
+    position: relative;
+    margin-top: 80px;
+}
+
+.background-section h1 {
     color: white;
-    /* Texte en blanc */
-    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
-    /* Ombre pour rendre le texte lisible */
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+    padding: 0 20px;
+    position: relative;
+}
+
+.background-section h1::after {
+    content: '';
+    display: block;
+    width: 100px;
+    height: 4px;
+    background-color: #5e8ea7;
+    margin: 20px auto 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Media query pour les appareils mobiles */
+@media (max-width: 768px) {
+    .background-section {
+        height: 60vh;
+        background-attachment: scroll;
+    }
+    
+    .background-section h1 {
+        font-size: clamp(2rem, 4vw, 3rem);
+    }
+    
+    .background-section h1::after {
+        width: 80px;
+        height: 3px;
+    }
 }
 
 /* .h1 {
@@ -992,7 +1022,8 @@ footer {
 .container h3 {
     text-align: center;
     font-size: 2rem;
-    margin-top: 120px;
+    margin-top: 80px;
+    font-weight: bold;
 
 }
 
@@ -1087,13 +1118,17 @@ footer {
     /* L'image remplit l'espace et conserve ses proportions */
 }
 
-.container h3,
-.container-slid h3 {
-
-    font-size: 1.5rem;
+.section-title {
+    font-size: 5.5rem;
     font-weight: bold;
     margin-top: 35px;
+}
 
+/* Style spécifique pour les titres h3 dans les cards */
+.value-card h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 0; /* Pas de marge en haut pour les titres dans les cards */
 }
 
 .ProjetCard {
