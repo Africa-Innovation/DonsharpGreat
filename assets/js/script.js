@@ -18,20 +18,31 @@ document.addEventListener("DOMContentLoaded", function () {
 //pour le menu burger
 
 document.addEventListener("DOMContentLoaded", function () {
-  const hamburger = document.querySelector('.hamburger');
-  const nav = document.querySelector('.nav');
+    const hamburger = document.querySelector('.hamburger');
+    const navMobile = document.querySelector('.nav-mobile');
+    
+    if (hamburger && navMobile) {
+        hamburger.addEventListener('click', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+            navMobile.classList.toggle('active');
+        });
 
-  hamburger.addEventListener('click', function () {
-      nav.classList.toggle('active');
-  });
-});
+        // Fermer le menu en cliquant à l'extérieur
+        document.addEventListener('click', function (e) {
+            if (!navMobile.contains(e.target) && !hamburger.contains(e.target)) {
+                navMobile.classList.remove('active');
+            }
+        });
 
-document.addEventListener('click', function (e) {
-  const nav = document.querySelector('.nav');
-  const hamburger = document.querySelector('.hamburger');
-  if (!nav.contains(e.target) && !hamburger.contains(e.target)) {
-      nav.classList.remove('active');
-  }
+        // Fermer le menu après avoir cliqué sur un lien
+        const mobileLinks = navMobile.querySelectorAll('a');
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                navMobile.classList.remove('active');
+            });
+        });
+    }
 });
 
 //pour le tabar dans à propos
